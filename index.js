@@ -8,8 +8,10 @@
     }
 
     function changeElementColor() {
-        const targetElement = document.getElementById('targetElement');
-        targetElement.style.color = getRandomHexColor();
-        const targetElement2 = document.getElementById('targetElement2');
-        targetElement2.style.color = getRandomHexColor();
+
+        var elms = document.querySelectorAll("[id='targetElement']");
+ 
+        for(var i = 0; i < elms.length; i++) 
+            elms[i].style.color=getRandomHexColor();;
+       
     }
