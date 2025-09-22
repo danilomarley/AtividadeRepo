@@ -15,3 +15,7 @@
             elms[i].style.color=getRandomHexColor();;
        
     }
+    document.addEventListener('DOMContentLoaded', function() {
+        changeElementColor();
+        });
+    
